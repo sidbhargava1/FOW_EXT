@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Indeed Likelihood",
+  "version": "0.1.0",
+  "description": "add percentage a job is automatable",
+
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.indeed.ca/jobs?q=td*"]
+  }]
+
+}
