@@ -30,18 +30,26 @@ var job_general = {
 
 // use regex to make more generalizable
 
-
-
 for (var i = 0, l = titles.length; i < l; i++) {
-	var prob = job_general['Default']
+	var prob = job_general['Default'];
 	title = titles[i].innerText;
 	for(job in job_general){
-		var re = new RegExp(job)
+		var re = new RegExp(job);
 		if(re.test(title) == true){
-			prob = job_general[job]
+			prob = job_general[job];
 		}
 	}
- 	titles[i].innerText = title + " - " + prob + "%"
+
+	var div = document.createElement("div");
+	sponsor = titles[i].classList.contains("turnstileLink");
+	div.className += " sjcl";
+	sibling = titles[i].nextSibling;
+
+	if (sponsor == true) {
+		sibling = titles[i].parentElement.getElementsByClassName('sjcl')[0];
+	}
+
+	titles[i].parentElement.insertBefore(div,sibling);
+	div.innerText=prob + "% of this job is automatable.";
+	div.style.fontWeight = 'bold';
 }
-
-
