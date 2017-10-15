@@ -19,7 +19,6 @@ var job_general = {
 	"Administrator":"48.0",
 	"Specialist":"37.0",
 	"Clerk":"86.0"
-
 };
 
 // use regex to make more generalizable
@@ -46,4 +45,14 @@ for (var i = 0, l = titles.length; i < l; i++) {
 	titles[i].parentElement.insertBefore(div,sibling);
 	div.innerText=prob + "% of this job is automatable.";
 	div.style.fontWeight = 'bold';
+
+	var color = 'black'
+
+	if (prob <= 30) {
+		color = 'limegreen'
+	} else if (prob > 60) {
+		color = 'red'
+	}
+
+	div.style.color = color
 }
