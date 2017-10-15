@@ -9,7 +9,9 @@ var job_general = {
 	"Coordinator":"49.0",
 	"Technician":"36.0",
 	"Planner":"13.0",
-	"Accountant":"75.0"
+	"Accountant":"55.0"
+	"Data": "40.0"
+	"Computer":"15.0"
 };
 
 // use regex to make more generalizable

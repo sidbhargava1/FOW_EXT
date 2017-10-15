@@ -3,8 +3,10 @@
 
   "name": "Automify",
   "version": "0.1.0",
-  "description": "Adds a percentage to a job title if it is automatable",
-
+  "description": "What percentage of a job you're applying to automate-able?",
+  "icons": {  "16":"images/smart.png",
+              "48":"images/smart.png",
+              "128":"images/smart.png" },
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["content.js"],
