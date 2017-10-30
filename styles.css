@@ -11,8 +11,16 @@
   border-bottom-color: #879bae !important;
 }
 
+.tpd-frame-bottom .tpd-stem-triangle {
+  border-top-color: #879bae !important;
+}
+
 .tpd-frame-left .tpd-stem-triangle {
   border-right-color: #879bae !important;
+}
+
+.tpd-frame-right .tpd-stem-triangle {
+  border-left-color: #879bae !important;
 }
 
 .tpd-title-wrapper {
