@@ -35,24 +35,63 @@ for (var i = 0, l = titles.length; i < l; i++) {
 
 	var div = document.createElement("div");
 	sponsor = titles[i].classList.contains("turnstileLink");
-	div.className += " sjcl";
+	div.className += " sjcl automatable automatable-" + i;
 	sibling = titles[i].nextSibling;
 
 	if (sponsor == true) {
 		sibling = titles[i].parentElement.getElementsByClassName('sjcl')[0];
 	}
 
+	var br = document.createElement("br");
 	titles[i].parentElement.insertBefore(div,sibling);
-	div.innerText=prob + "% of this job is automatable.";
-	div.style.fontWeight = 'bold';
+	div.parentElement.insertBefore(br,sibling);
 
-	var color = 'black'
+	var content = "<p>This job is " + prob + "% automatable.</p>";
+
+	content += "<p>These are the skills most susceptible to automation:</p>";
+	content += "<ul>";
+	var skills = ["Skill1", "Skill2", "Skill3", "Skill4"];
+	for (var j = 0; j < skills.length; j++) {
+		content += "<li><a href='https://google.com'>" + skills[j] + "</a></li>";
+	}
+	content += "</ul>";
+
+	// content += "<p>Here are related jobs that are less automatable:</p>";
+	// content += "<ul>";
+	// var relatedJobs = ["Job1", "Job2", "Job3", "Job4"];
+	// for (var j = 0; j < relatedJobs.length; j++) {
+	// 	content += "<li><a href='https://google.com'>" + relatedJobs[j] + "</a></li>";
+	// }
+	// content += "</ul>";
+
+	div.setAttribute("data-title", title);
+	div.setAttribute("data-content", content);
+	div.innerText = prob + "% of this job is automatable.";
+
+	var color = 'black';
 
 	if (prob <= 30) {
-		color = 'limegreen'
+		color = 'limegreen';
 	} else if (prob > 60) {
-		color = 'red'
+		color = 'red';
 	}
 
-	div.style.color = color
+	div.style.color = color;
+
+	var divClass = ".automatable-" + i;
+	Tipped.create(divClass, function(element) {
+      return {
+        title: $(element).data('title'),
+        content: $(element).data('content')
+      };
+    }, {
+		position: 'rightmiddle',
+		size: 'large',
+		title: true,
+		close: true,
+		hideOn: false,
+		hideOthers: true,
+		maxWidth: 400,
+		maxHeight: 100
+	});
 }
