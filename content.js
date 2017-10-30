@@ -2,36 +2,39 @@ var titles = document.getElementsByClassName('jobtitle');
 
 
 var job_general = {
-	"Default":"35.0",
-	"Representative":"65.0",
-	"Officer":"1.0",
-	"Analyst":"11.0",
-	"Coordinator":"49.0",
-	"Technician":"36.0",
-	"Planner":"13.0",
-	"Accountant":"75.0",
-	"Specialist":"25.0",
-	"Developer":"40.0",
-	"Manager":"24.0",
-	"Agent":"46.0",
-	"Designer":"25.0",
-	"Associate":"33.0",
-	"Administrator":"48.0",
-	"Specialist":"37.0",
-	"Clerk":"86.0"
+	"Default":{percent:"35.0", skills: ["Default", "Default", "Default", "Default"]},
+	"Representative":{percent:"65.0", skills: ["Representative", "Representative", "Representative", "Representative"]},
+	"Officer":{percent:"1.0", skills: ["Officer", "Officer", "Officer", "Officer"]},
+	"Analyst":{percent:"11.0", skills: ["Analyst", "Analyst", "Analyst", "Analyst"]},
+	"Coordinator":{percent:"49.0", skills: ["Coordinator", "Coordinator", "Coordinator", "Coordinator"]},
+	"Technician":{percent:"36.0", skills: ["Technician", "Technician", "Technician", "Technician"]},
+	"Planner":{percent:"13.0", skills: ["Planner", "Planner", "Planner", "Planner"]},
+	"Accountant":{percent:"75.0", skills: ["Accountant", "Accountant", "Accountant", "Accountant"]},
+	"Specialist":{percent:"25.0", skills: ["Specialist", "Specialist", "Specialist", "Specialist"]},
+	"Developer":{percent:"40.0", skills: ["Developer", "Developer", "Developer", "Developer"]},
+	"Manager":{percent:"24.0", skills: ["Manager", "Manager", "Manager", "Manager"]},
+	"Agent":{percent:"46.0", skills: ["Agent", "Agent", "Agent", "Agent"]},
+	"Designer":{percent:"25.0", skills: ["Designer", "Designer", "Designer", "Designer"]},
+	"Associate":{percent:"33.0", skills: ["Associate", "Associate", "Associate", "Associate"]},
+	"Administrator":{percent:"48.0", skills: ["Administrator", "Administrator", "Administrator", "Administrator"]},
+	"Specialist":{percent:"37.0", skills: ["Specialist", "Specialist", "Specialist", "Specialist"]},
+	"Clerk":{percent:"86.0", skills: ["Clerk", "Clerk", "Clerk", "Clerk"]}
 };
 
 // use regex to make more generalizable
 
 for (var i = 0, l = titles.length; i < l; i++) {
-	var prob = job_general['Default'];
+	var jobType = job_general['Default'];
 	title = titles[i].innerText;
 	for(job in job_general){
 		var re = new RegExp(job);
 		if(re.test(title) == true){
-			prob = job_general[job];
+			jobType = job_general[job];
 		}
 	}
+
+	var prob = jobType.percent;
+	var skills = jobType.skills;
 
 	var div = document.createElement("div");
 	sponsor = titles[i].classList.contains("turnstileLink");
@@ -47,12 +50,10 @@ for (var i = 0, l = titles.length; i < l; i++) {
 	div.parentElement.insertBefore(br,sibling);
 
 	var content = "<p>This job is " + prob + "% automatable.</p>";
-
 	content += "<p>These are the skills most susceptible to automation:</p>";
 	content += "<ul>";
-	var skills = ["Skill1", "Skill2", "Skill3", "Skill4"];
 	for (var j = 0; j < skills.length; j++) {
-		content += "<li><a href='https://google.com'>" + skills[j] + "</a></li>";
+		content += "<li><a href='#'>" + skills[j] + "</a></li>";
 	}
 	content += "</ul>";
 
@@ -60,7 +61,7 @@ for (var i = 0, l = titles.length; i < l; i++) {
 	// content += "<ul>";
 	// var relatedJobs = ["Job1", "Job2", "Job3", "Job4"];
 	// for (var j = 0; j < relatedJobs.length; j++) {
-	// 	content += "<li><a href='https://google.com'>" + relatedJobs[j] + "</a></li>";
+	// 	content += "<li><a href='#'>" + relatedJobs[j] + "</a></li>";
 	// }
 	// content += "</ul>";
 
@@ -91,7 +92,6 @@ for (var i = 0, l = titles.length; i < l; i++) {
 		close: true,
 		hideOn: false,
 		hideOthers: true,
-		maxWidth: 400,
-		maxHeight: 100
+		maxWidth: 400
 	});
 }

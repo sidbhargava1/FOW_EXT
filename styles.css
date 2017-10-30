@@ -6,3 +6,19 @@
 .tpd-content-spacer {
   background-color: #879bae;
 }
+
+.tpd-frame-top .tpd-stem-triangle {
+  border-bottom-color: #879bae !important;
+}
+
+.tpd-frame-left .tpd-stem-triangle {
+  border-right-color: #879bae !important;
+}
+
+.tpd-title-wrapper {
+  border-bottom-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.tpd-content ul li a {
+  color: white;
+}
