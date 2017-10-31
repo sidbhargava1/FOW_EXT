@@ -18,29 +18,7 @@ var jobTypes = {
 			"Financial Planner, Investment and Retirement Planning":{
 				percent:"22.0"
 				mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
-				leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
-
-					"Senior Business Systems Analyst":{
-						percent:"3.0",
-						mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
-						leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
-
-							"Branch Administrator":{
-								percent:"51.0",
-								mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
-								leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
-
-									"Business Account Manager":{
-										percent:"1.0",
-										mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
-										leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
-
-											"Security Assessment Analyst":{
-												percent:"46.0",
-												mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
-												leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
-
-
+				leastSuscept: [{skill:"bloomberg",percent:"20.0"}, {skill:"asset allocation management",percent:"10.0"}, {skill:"investment strategies",percent:"27.0"}, {skill:"wealth management",percent:"15.0"}]},
 
 	"Officer":{
 		percent:"1.0",
