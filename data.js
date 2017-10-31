@@ -9,6 +9,14 @@ var jobTypes = {
 		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
 		leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]
 	},
+	"Business Analyst"
+	{
+		percent:"11.0",
+		mostSuscept: [{skill:"creative writing",percent:"70.0"}, {skill:"management",percent:"87.0"}, {skill:"Excel",percent:"4.0"}, {skill:"technical documentation",percent:"60.0"}],
+		leastSuscept: [{skill:"banking",percent:"25"}, {skill:"project finance",percent:"17"}, {skill:"PowerBI",percent:"35"}, {skill:"Analysis",percent:"45.0"}]},
+
+
+
 	"Officer":{
 		percent:"1.0",
 		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
