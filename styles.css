@@ -4,23 +4,23 @@
 }
 
 .tpd-content-spacer {
-  background-color: #879bae;
+  background-color: #4c74ff;
 }
 
 .tpd-frame-top .tpd-stem-triangle {
-  border-bottom-color: #879bae !important;
+  border-bottom-color: #4c74ff !important;
 }
 
 .tpd-frame-bottom .tpd-stem-triangle {
-  border-top-color: #879bae !important;
+  border-top-color: #4c74ff !important;
 }
 
 .tpd-frame-left .tpd-stem-triangle {
-  border-right-color: #879bae !important;
+  border-right-color: #4c74ff !important;
 }
 
 .tpd-frame-right .tpd-stem-triangle {
-  border-left-color: #879bae !important;
+  border-left-color: #4c74ff !important;
 }
 
 .tpd-title-wrapper {
