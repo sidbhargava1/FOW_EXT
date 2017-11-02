@@ -3,6 +3,14 @@
   font-weight: bold;
 }
 
+.tpd-visible-frame-top, .tpd-visible-frame-bottom, .tpd-visible-frame-left, .tpd-visible-frame-right {
+  z-index: 1;
+}
+
+.tpd-backgrounds {
+  opacity: 0;
+}
+
 .tpd-content-wrapper {
   overflow: visible;
 }
