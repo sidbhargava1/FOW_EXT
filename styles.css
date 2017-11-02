@@ -5,6 +5,7 @@
 
 .tpd-visible-frame-top, .tpd-visible-frame-bottom, .tpd-visible-frame-left, .tpd-visible-frame-right {
   z-index: 1;
+  pointer-events: none;
 }
 
 .tpd-backgrounds {
