@@ -3,30 +3,75 @@
   font-weight: bold;
 }
 
+.tpd-visible-frame-top, .tpd-visible-frame-bottom, .tpd-visible-frame-left, .tpd-visible-frame-right {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.tpd-backgrounds {
+  opacity: 0;
+}
+
+.tpd-content-wrapper {
+  overflow: visible;
+}
+
 .tpd-content-spacer {
-  background-color: #4c74ff;
-}
-
-.tpd-frame-top .tpd-stem-triangle {
-  border-bottom-color: #4c74ff !important;
-}
-
-.tpd-frame-bottom .tpd-stem-triangle {
-  border-top-color: #4c74ff !important;
-}
-
-.tpd-frame-left .tpd-stem-triangle {
-  border-right-color: #4c74ff !important;
-}
-
-.tpd-frame-right .tpd-stem-triangle {
-  border-left-color: #4c74ff !important;
+  background-color: #ebebeb;
+  box-shadow: 0 0 4px 0px #b7b7b7;
 }
 
 .tpd-title-wrapper {
-  border-bottom-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: #4c74ff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
-.tpd-content ul li a {
-  color: white;
+.tpd-content {
+  color: #000000 !important;
+}
+
+.tpd-frame-top .tpd-stem-triangle {
+  border-bottom-color: #ebebeb !important;
+}
+
+.tpd-frame-bottom .tpd-stem-triangle {
+  border-top-color: #ebebeb !important;
+}
+
+.tpd-frame-left .tpd-stem-triangle {
+  border-right-color: #ebebeb !important;
+}
+
+.tpd-frame-right .tpd-stem-triangle {
+  border-left-color: #ebebeb !important;
+}
+
+.tpd-title-wrapper {
+  border-bottom-color: #4c74ff !important;
+}
+
+.susceptible-skills-table {
+  width: 100%;
+  background-color: #4e74ff;
+}
+
+.susceptible-skills-table .header {
+  color: #ffffff;
+}
+
+.susceptible-skills-table .body {
+  background-color: #ffffff;
+}
+
+.susceptible-skills-table .body td {
+  width: 50%;
+}
+
+.susceptible-skills-table .body ul {
+  padding-left: 25px;
+}
+
+.susceptible-skills-table .body ul li a {
+  color: #000000;
 }
