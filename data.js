@@ -5,34 +5,20 @@ var jobTypes = {
 		leastSuscept: [{skill:"Communication",percent:"50.0"}, {skill:"Leadership",percent:"50.0"}/*, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}*/]},
 	"Representative":{
 		percent:"65.0",
-<<<<<<< HEAD
 		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
-		leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]
-	},
-	"Business Analyst Consultant"
-	{
+		leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
+	"Business Analyst Consultant":{
 		percent:"17.0",
 		mostSuscept: [{skill:"creative writing",percent:"70.0"}, {skill:"management",percent:"87.0"}, {skill:"Excel",percent:"4.0"}, {skill:"technical documentation",percent:"60.0"}],
 		leastSuscept: [{skill:"banking",percent:"25"}, {skill:"project finance",percent:"17"}, {skill:"sdlc",percent:"35"}, {skill:"Business Analysis",percent:"45.0"}]},
-
-			"Financial Planner, Investment and Retirement Planning":{
-				percent:"22.0"
-				mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
-				leastSuscept: [{skill:"bloomberg",percent:"20.0"}, {skill:"asset allocation management",percent:"10.0"}, {skill:"investment strategies",percent:"27.0"}, {skill:"wealth management",percent:"15.0"}]},
-
-=======
-		mostSuscept: [{skill:"Analytical Skills",percent:"50.0"}, {skill:"Attention to Detail",percent:"50.0"}, {skill:"Microsoft Excel",percent:"50.0"}, {skill:"Microsoft Office",percent:"50.0"}],
-		leastSuscept: [{skill:"Customer Serivice",percent:"50.0"}, {skill:"Sales",percent:"50.0"}, {skill:"Bilingual",percent:"50.0"}/*, {skill:"Least1",percent:"50.0"}*/]},
-	/*"Business Analyst":{
-		percent:"11.0",
-		mostSuscept: [{skill:"creative writing",percent:"70.0"}, {skill:"management",percent:"87.0"}, {skill:"Excel",percent:"4.0"}, {skill:"technical documentation",percent:"60.0"}],
-		leastSuscept: [{skill:"banking",percent:"25"}, {skill:"project finance",percent:"17"}, {skill:"PowerBI",percent:"35"}, {skill:"Analysis",percent:"45.0"}]
-	},*/
->>>>>>> 1104071d30c440426a28225ff1cc4186d5461ea4
+	"Financial Planner, Investment and Retirement Planning":{
+		percent:"22.0"
+		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
+		leastSuscept: [{skill:"bloomberg",percent:"20.0"}, {skill:"asset allocation management",percent:"10.0"}, {skill:"investment strategies",percent:"27.0"}, {skill:"wealth management",percent:"15.0"}]},
 	"Officer":{
 		percent:"1.0",
-		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}, {skill:"Most1",percent:"50.0"}],
-		leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
+		mostSuscept: [{skill:"Analytical Skills",percent:"50.0"}, {skill:"Attention to Detail",percent:"50.0"}, {skill:"Microsoft Excel",percent:"50.0"}, {skill:"Microsoft Office",percent:"50.0"}],
+		leastSuscept: [{skill:"Customer Serivice",percent:"50.0"}, {skill:"Sales",percent:"50.0"}, {skill:"Bilingual",percent:"50.0"}/*, {skill:"Least1",percent:"50.0"}*/]},
 	"Analyst":{
 		percent:"11.0",
 		mostSuscept: [{skill:"Creative Writing",percent:"70.0"}, {skill:"Management",percent:"87.0"}, {skill:"Microsoft Excel",percent:"4.0"}, {skill:"Technical Documentation",percent:"60.0"}],

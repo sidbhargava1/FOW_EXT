@@ -1,7 +1,7 @@
 var titles = document.getElementsByClassName('jobtitle');
 
 // SHOW SKILL PERCENTAGES
-var showSkillSusceptibility = false;
+var showSkillSusceptibility = true;
 
 for (var i = 0, l = titles.length; i < l; i++) {
 
