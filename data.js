@@ -18,8 +18,8 @@ var jobTypes = {
 		leastSuscept: [{skill:"Customer Serivice",percent:"50.0"}, {skill:"Sales",percent:"50.0"}, {skill:"Bilingual",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
 	"Analyst":{
 		percent:"11.0",
-		mostSuscept: [{skill:"Creative Writing",percent:"70.0"}, {skill:"Management",percent:"87.0"}, {skill:"Microsoft Excel",percent:"4.0"}, {skill:"Technical Documentation",percent:"60.0"}],
-		leastSuscept: [{skill:"Banking",percent:"25.0"}, {skill:"Project Finance",percent:"17.0"}, {skill:"Least1",percent:"50.0"}, {skill:"Least1",percent:"50.0"}]},
+		mostSuscept: [{skill:"Microsoft Word",percent:"70.0"}, {skill:"Management",percent:"87.0"}, {skill:"Microsoft Excel",percent:"4.0"}, {skill:"Technical Documentation",percent:"60.0"}],
+		leastSuscept: [{skill:"Banking",percent:"25.0"}, {skill:"Project Finance",percent:"17.0"}, {skill:"Creative Writing",percent:"50.0"}/*,{skill:"Least1",percent:"50.0"}*/]},
 
   "Coordinator":{
 		percent:"49.0",
@@ -70,7 +70,7 @@ var jobTypes = {
 		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most2",percent:"40.0"}, {skill:"Most3",percent:"30.0"}, {skill:"Most4",percent:"20.0"}],
 		leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least2",percent:"40.0"}, {skill:"Least3",percent:"30.0"}, {skill:"Least4",percent:"40.0"}]},
 	"Data Scientist":{
-		percent:"0.0"
+		percent:"0.0",
 		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most2",percent:"40.0"}, {skill:"Most3",percent:"30.0"}, {skill:"Most4",percent:"20.0"}],
 		leastSuscept: [{skill:"Machine Learning",percent:"1.0"}, {skill:"R",percent:"40.0"}, {skill:"Python",percent:"30.0"}, {skill:"Modelling",percent:"40.0"}]}
 };

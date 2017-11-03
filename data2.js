@@ -68,15 +68,9 @@ var jobTypes = {
 	"Clerk":{
 		percent:"86.0",
 		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most2",percent:"40.0"}, {skill:"Most3",percent:"30.0"}, {skill:"Most4",percent:"20.0"}],
-		leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least2",percent:"40.0"}, {skill:"Least3",percent:"30.0"}, {skill:"Least4",percent:"40.0"}]}
+		leastSuscept: [{skill:"Least1",percent:"50.0"}, {skill:"Least2",percent:"40.0"}, {skill:"Least3",percent:"30.0"}, {skill:"Least4",percent:"40.0"}]},
 	"Data Scientist":{
-		percent:"0.0"
+		percent:"0.0",
 		mostSuscept: [{skill:"Most1",percent:"50.0"}, {skill:"Most2",percent:"40.0"}, {skill:"Most3",percent:"30.0"}, {skill:"Most4",percent:"20.0"}],
 		leastSuscept: [{skill:"Machine Learning",percent:"1.0"}, {skill:"Least2",percent:"40.0"}, {skill:"Least3",percent:"30.0"}, {skill:"Least4",percent:"40.0"}]}
-	}
-
-
-
-
-
 };
